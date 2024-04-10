@@ -1,0 +1,278 @@
+.event-card-home {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  position: relative;
+  transition: 0.3s all ease;
+  background: #ffffff08;
+  border-radius: 0.4rem;
+  max-width: 28rem;
+
+  &.yescard {
+    background: linear-gradient(45deg, #27a3aa66, #1e9a5b66);
+  }
+
+  &.nocard {
+    background: linear-gradient(45deg, #bb262a66, #8a3a5666);
+  }
+
+  .event-card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .event-card-footer {
+    h6 {
+      color: #ffffff99;
+      margin: 0;
+      margin-top: 0.7rem;
+      border-top: 0rem solid #ffffff26;
+      padding-top: 0rem;
+      font-size: 0.9rem;
+
+      &.expire-time2 {
+        border-top: 0.05rem solid #ffffff26;
+        padding-top: 0.7rem;
+      }
+
+      span {
+        font-weight: 600;
+      }
+
+      svg {
+        margin-right: 0.3rem;
+        font-size: 1rem;
+        color: #ffffff;
+        color: #ffffff99;
+      }
+
+      img {
+        height: 1.4rem;
+        width: 1.4rem;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  .yes_no_button_wrapper {
+    margin-top: 0.5rem;
+    margin-left: 3rem;
+
+    .bg-yes {
+      position: relative;
+      text-shadow: 0rem 0rem 0.15rem #198e81;
+
+      &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        background: url("https://cdn.guardianlink.io/product-hotspot/images/CallIt/CallIt_Yes_Bull_Mar3.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #fff;
+        background-position: center;
+        z-index: -1;
+        border-radius: 0.5rem !important;
+        opacity: 0.85;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+
+    .bg-no {
+      position: relative;
+      text-shadow: 0rem 0rem 0.15rem #bb2b2c;
+
+      &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        content: "";
+        color: #fff;
+        border-radius: 0.5rem !important;
+        background: url("https://cdn.guardianlink.io/product-hotspot/images/CallIt/CallIt_No_Bear_Mar3.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1;
+        opacity: 0.85;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      &:hover {
+        &::before {
+          opacity: 1;
+        }
+      }
+    }
+
+    .cart-btn {
+      padding: 0.7rem 1.2rem;
+      border-radius: 0.5rem !important;
+      width: 45%;
+      z-index: 1;
+      font-size: 0.9rem;
+      // text-shadow: 0rem 0rem 0.15rem #000;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.04rem;
+      line-height: 1.2;
+    }
+  }
+
+  .expire_time {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 0.85rem;
+    align-items: center;
+
+    .counter-time,
+    .counter-interval {
+      font-size: 0.85rem;
+    }
+  }
+}
+
+.ec-tag {
+  font-weight: 600;
+  font-size: 0.75rem;
+  border-radius: 0.2rem;
+  padding: 0.1rem 0.6rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+  line-height: 1.2;
+  color: #ffffff;
+
+  &.pending,
+  &.unmatched {
+    background-color: #961111;
+    border: 0.1rem solid #961111;
+  }
+
+  &.matched,
+  &.completed {
+    background-color: #20d166;
+    border: 0.1rem solid #20d166;
+    color: #0d0f16;
+  }
+
+  &.proccessed {
+    background-color: #961111;
+    border: 0.1rem solid #961111;
+  }
+
+  &.progress {
+    background-color: goldenrod;
+    border: 0.1rem solid goldenrod;
+  }
+}
+
+.ec-tag-timing {
+  color: #a5abb2;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.event-tag-main {
+  margin-bottom: 0.2rem;
+}
+
+.green-tag {
+  background-color: #01a43b;
+  color: #ffffff;
+}
+
+.event-name p {
+  line-height: 1.39;
+  margin: 0 !important;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.1rem;
+  letter-spacing: 0.02rem;
+}
+
+.event-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+// .event-card:hover {
+//   transition: 0.3s all ease;
+//   background: #ffffff0d;
+// }
+
+.event-card-home .card-logo {
+  // height: 4rem;
+  // width: 4rem;
+  // border-radius: 0.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 0.5rem;
+  border-radius: 50rem;
+  margin-bottom: 1rem !important;
+}
+
+.event-liner p {
+  margin: 0;
+  color: #ffffff80 !important;
+  font-size: 0.85rem !important;
+  font-weight: 400 !important;
+  margin-left: 3rem;
+}
+
+.event-liner p img {
+  width: 1rem;
+  height: auto;
+  margin-right: 0.2rem;
+}
+
+.mobile-card-box {
+  position: relative;
+
+  .callitEventCard {
+    // position: absolute;
+
+    &.card1 {
+      // transform: scale(0.75) translate(-13rem, 5rem);
+      transform: scale(0.75) translate(8rem, 0.5rem);
+
+      @media screen and (max-width: 767px) {
+        // transform: scale(0.75) translate(0rem, 1.5rem);
+        transform: scale(0.75) translate(8rem, 2.5rem);
+      }
+
+      @media screen and (max-width: 520px) {
+        transform: scale(0.75) translate(0, 2.5rem);
+        margin: 0.8rem auto;
+      }
+    }
+
+    &.card2 {
+      // transform: scale(0.75) translate(17rem, 13rem);
+      transform: scale(0.75) translate(24rem, -2rem);
+
+      @media screen and (max-width: 767px) {
+        // transform: scale(0.75) translate(0rem, 16.5rem);
+        transform: scale(0.75) translate(24rem, -1rem);
+      }
+
+      @media screen and (max-width: 520px) {
+        transform: scale(0.75) translate(0, -1rem);
+        margin: 0.8rem auto;
+      }
+    }
+  }
+}

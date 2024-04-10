@@ -1,0 +1,59 @@
+.trading_page_wrapper {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &:before {
+    content: "";
+    background-attachment: fixed;
+    background-image: url("../../images/call-it-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: fixed;
+    inset: 0 0 0 0;
+    opacity: 0.88;
+  }
+  .trading_page_layout {
+    // background: #1d1c2c;
+    background-image: linear-gradient(
+      180deg,
+      #1d2133 20%,
+      #0f2336 58%,
+      #341a23 92%
+    );
+    min-height: 100vh;
+    width: 100%;
+    max-width: 31rem;
+    position: relative;
+    box-shadow: 0rem 0rem 4rem -1.5rem #3b3b54;
+    overflow: hidden;
+    @media only screen and (max-width: 425px) {
+      max-width: 100%;
+    }
+    .trading-main-page-section {
+      height: calc(100vh - 6rem);
+      overflow-y: auto;
+      margin-top: 6rem;
+    }
+    .event-wrapper {
+      padding: 1rem;
+      margin-top: 5rem;
+      height: calc(100vh - 5rem);
+      overflow: auto;
+      &.enable-footer {
+        height: calc(100vh - 10rem);
+      }
+      &.event-detail-page {
+        padding: 0;
+      }
+    }
+    iframe {
+      width: 100%;
+      // height: calc(100vh - 10rem);
+    }
+  }
+}

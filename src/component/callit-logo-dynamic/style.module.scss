@@ -1,0 +1,109 @@
+// @import "../../styles/common";
+
+.logo-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  .img-block {
+    img {
+      height: 45px;
+      width: 45px;
+      object-fit: contain;
+      object-position: center;
+    }
+  }
+  .content-block {
+    position: relative;
+    h5 {
+      color: #fff;
+      text-transform: uppercase;
+      margin: 0;
+      font-weight: 800;
+      font-size: 1.7rem;
+      span {
+        color: #f38a1e;
+      }
+    }
+    .logo-info {
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      .tagline {
+        font-size: 0.65rem;
+        color: #f38a1e;
+      }
+      .betapill {
+        text-transform: uppercase;
+        color: #000000;
+        background: #fff;
+        font-size: 0.6rem;
+        padding: 0.1rem 0.2rem;
+        border-radius: 0.15rem;
+        font-weight: 700;
+      }
+    }
+  }
+  &.app-logo {
+    position: relative;
+    .img-block {
+      img {
+        height: 30px;
+        width: 30px;
+        @media screen and (max-width: 365px) {
+          height: 25px;
+          width: 25px;
+        }
+      }
+    }
+    .content-block {
+      position: relative;
+      h5 {
+        font-size: 1.35rem;
+        @media screen and (max-width: 365px) {
+          font-size: 1.15rem;
+        }
+      }
+      .logo-info {
+        .tagline {
+          font-size: 0.6rem;
+        }
+        .betapill {
+          font-size: 0.55rem;
+        }
+      }
+    }
+  }
+  &.not-found-logo {
+    position: relative;
+    .img-block {
+      img {
+        height: 50px;
+        width: 50px;
+        @media screen and (max-width: 365px) {
+          height: 50px;
+          width: 50px;
+        }
+      }
+    }
+    .content-block {
+      position: relative;
+      h5 {
+        font-size: 2.5rem;
+        @media screen and (max-width: 365px) {
+          font-size: 2.3rem;
+        }
+      }
+      .logo-info {
+        .tagline {
+          font-size: 0.975rem;
+        }
+        .betapill {
+          font-size: 0.55rem;
+        }
+      }
+    }
+  }
+}

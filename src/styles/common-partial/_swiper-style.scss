@@ -1,0 +1,10 @@
+.swiper-pagination-bullet {
+  width: 0.5rem !important;
+  height: 0.5rem !important;
+  background: #fff !important;
+  transition: 0.5s all ease;
+  &-active {
+    width: 2rem !important;
+    border-radius: 0.5rem !important;
+  }
+}

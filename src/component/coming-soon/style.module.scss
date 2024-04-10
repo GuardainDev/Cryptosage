@@ -1,0 +1,68 @@
+@import "../../styles/common";
+.hero-banner-section {
+  background-color: #000;
+  position: relative;
+  .slider_one {
+    // background-image: url("../../images/opinion-trading/hero-bannerBG.jpg");
+    // background-image: url("../../images/backg-callit.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  article {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    h1 {
+      font-size: 3.6rem;
+      font-family: $chakrapetch-bold;
+      text-align: center;
+      @media screen and (max-width: 620px) {
+        font-size: 1.8rem;
+      }
+    }
+  }
+  .blink_contest {
+    animation: blinker_contest 2s linear infinite;
+    color: #ef9e5e !important;
+    position: absolute;
+    right: -2.2rem;
+    top: -1rem;
+    .new-badge {
+      background: #ec834d;
+      padding: 0.1rem 0.3rem;
+      border-radius: 50rem;
+      text-transform: uppercase;
+      color: #0a0a0e;
+      font-size: 0.6rem;
+      font-weight: 600;
+      position: relative;
+      top: -0.5rem;
+    }
+  }
+
+  @keyframes blinker_contest {
+    50% {
+      opacity: 0;
+    }
+  }
+  .logo-img {
+    height: 5rem;
+    margin-bottom: 3rem;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

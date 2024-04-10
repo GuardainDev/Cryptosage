@@ -1,0 +1,135 @@
+$xl-width: 1200px;
+$lg-width: 992px;
+$md-width: 768px;
+$sm-width: 576px;
+
+$xl-max-width: 1160px;
+$lg-max-width: 882px;
+$md-max-width: 774px;
+$sm-max-width: 650px;
+
+// $futura: "Furuta" !important;
+
+$dark-color: #000;
+$little-dark-color: #222;
+$theme-color: #871dc4;
+$theme-color-lite: #c784ed;
+
+//#fc7a4f
+
+// Helper
+
+@mixin text-ellipsis {
+  width: 100%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+// proxima-nova Font family
+
+@import url("https://p.typekit.net/p.css?s=1&k=iyv3ite&ht=tk&f=137.139.169.173.175&a=99203635&app=typekit&e=css");
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("https://use.typekit.net/af/e3ed45/00000000000000007735e602/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n9&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/e3ed45/00000000000000007735e602/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n9&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/e3ed45/00000000000000007735e602/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n9&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("https://use.typekit.net/af/8738d8/00000000000000007735e611/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n8&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/8738d8/00000000000000007735e611/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n8&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/8738d8/00000000000000007735e611/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n8&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/2555e1/00000000000000007735e603/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n6&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n6&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/78aca8/00000000000000007735e60d/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n6&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "proxima-nova";
+  src: url("https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+// nunito-sans Font family
+@import url("https://p.typekit.net/p.css?s=1&k=aby4vee&ht=tk&f=40496&a=99203635&app=typekit&e=css");
+
+@font-face {
+  font-family: "nunito-sans";
+  src: url("https://use.typekit.net/af/1321cb/00000000000000007735b909/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/1321cb/00000000000000007735b909/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/1321cb/00000000000000007735b909/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n9&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+$proxima-nova: "proxima-nova" !important;
+$nunito-sans: "nunito-sans" !important; //Bold Heading
+
+// Chakra font
+@font-face {
+  font-family: "chakrapetch_bold";
+  src: url("../fonts/chakra//chakrapetch-bold-webfont.woff") format("woff");
+}
+
+$chakrapetch-bold: "chakrapetch_bold" !important; // bold

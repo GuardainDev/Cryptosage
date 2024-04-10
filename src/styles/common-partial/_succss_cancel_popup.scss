@@ -1,0 +1,22 @@
+.bottom_sheet_plain {
+  &.confirmation-popup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+
+    .lotti-icon {
+      height: 12rem;
+      width: 12rem;
+      height: 6rem;
+      width: 6rem;
+      margin: 2rem auto;
+
+      &.exitSearch {
+        height: 12rem;
+        width: 12rem;
+      }
+    }
+  }
+}
